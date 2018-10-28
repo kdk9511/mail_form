@@ -1,0 +1,30 @@
+<style>
+body {
+    padding: 70px 0px;
+}
+</style>
+
+<div class='container'>
+    <div>
+        <h3>메일 보내기</h3><br>
+    </div>
+    <form action="/mailbox/send_mail" method="POST">
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" name='from_mail' aria-describedby="emailHelp" placeholder="보내는 사람">
+      </div>    
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" name='to_mail' aria-describedby="emailHelp" placeholder="받는 사람">
+      </div>    
+
+      <div class="form-group">
+        <textarea class="form-control" name='title' id="exampleTextarea" rows="1" placeholder="제목"></textarea>
+      </div>
+
+      <div class="form-group">
+        <textarea class="form-control" name='content' id="exampleTextarea" rows="8"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">보내기</button>
+    </form>
+</div>
