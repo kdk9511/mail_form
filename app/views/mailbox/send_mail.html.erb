@@ -10,19 +10,19 @@ body {
     </div>
     <form>
       <div class="form-group">
-        <input type="email" class="form-control" id="exampleInputEmail1" name='from_mail' aria-describedby="emailHelp" placeholder="<%= @from_mail %>">
+        <input type="email" class="form-control" id="exampleInputEmail1" name='from_mail' aria-describedby="emailHelp" value="<%= @from_mail %>">
       </div>    
 
       <div class="form-group">
-        <input type="email" class="form-control" id="exampleInputEmail1" name='to_mail' aria-describedby="emailHelp" placeholder="<%= @to_mail %>">
+        <input type="email" class="form-control" id="exampleInputEmail1" name='to_mail' aria-describedby="emailHelp" value="<%= @to_mail %>">
       </div>    
 
       <div class="form-group">
-        <textarea class="form-control" name='title' id="exampleTextarea" rows="1" placeholder="<%= @title %>"></textarea>
+        <textarea class="form-control" name='title' id="exampleTextarea" rows="1"><%= @title %></textarea>
       </div>
 
       <div class="form-group">
-        <textarea class="form-control" name='content' id="exampleTextarea" rows="8" placeholder="<%= @content %>"></textarea>
+        <textarea class="form-control" name='content' id="exampleTextarea" rows="8"><%= @content %></textarea>
       </div>
 
     </form>
